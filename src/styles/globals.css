@@ -1,4 +1,21 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: sooth;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.custom-image{
+  background-image: url('https://images.unsplash.com/photo-1680186434161-5f72fc76c8dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60')
+}
+
+
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -39,6 +56,8 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -104,4 +123,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
