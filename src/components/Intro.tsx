@@ -3,9 +3,9 @@ import React from 'react'
 const Intro = ({heading, message}) => {
   return (
     <div>
-      <div className='flex istems-center justify-center'>
+      {/* <div className='flex istems-center justify-center'>
         Intro Comp
-      </div>
+      </div> */}
       <div className= 'flex istems-center justify-center
                       mb-12 bg-fixed bg-center bg-cover bg-white'>
         <div className=''/>
