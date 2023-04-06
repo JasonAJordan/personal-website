@@ -5,12 +5,17 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
+  const [showJobs, setShowJobs] = useState(false)
 
   const [color, setColor] = useState('transparent')
   const [textColor, setTextColor] = useState('black')
 
   const handleNav = () => {
     setNav(!nav)
+  }
+
+  const handleWorkHover = () => {
+    setShowJobs(!showJobs)
   }
 
   useEffect(()=> {
@@ -34,13 +39,14 @@ const Navbar = () => {
         {/* Web button */}
         <ul style={{color: `${textColor}`}}  className='hidden sm:flex'>
           <li className='p-4'>
-          <Link href='/'>Home</Link>
+            <Link href='/'>Home</Link>
           </li>
           <li className='p-4'>
-          <Link href='/'>Work</Link>
+            <div onMouseOver={handleWorkHover}> Work</div>
+            {/* <Link href='/work'>Work</Link> */}
           </li>
           <li className='p-4'>
-          <Link href='/'>Contact</Link>
+            <Link href='/contact'>Contact</Link>
           </li>
         </ul>
 
@@ -62,10 +68,10 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className='p-4 text=4xl hover:text-gray-500'>
-              <Link href='/'>Work</Link>
+              <Link href='/work'>Work</Link>
             </li>
             <li className='p-4 text=4xl hover:text-gray-500'>
-              <Link href='/'>Contact</Link>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
         </div>
