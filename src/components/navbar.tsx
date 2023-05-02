@@ -42,8 +42,7 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='p-4'>
-            <div onMouseOver={handleWorkHover}> Work</div>
-            {/* <Link href='/work'>Work</Link> */}
+            <Link href='/work' onMouseOver={handleWorkHover} >Work</Link>
           </li>
           <li className='p-4'>
             <Link href='/contact'>Contact</Link>

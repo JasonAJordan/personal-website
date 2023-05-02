@@ -12,13 +12,14 @@ const Intro = ({heading, message}) => {
         <div className='p-5 ml-[-10rem] mt-[10rem]'>
           <h2 className='text-5xl font-bold'>{heading}</h2>
           <p className='py-5 text-xl'>{message}</p>
-          <a className='px-8 py-2 border' href='../components/Resume_Jason_Jordan_2023.pdf' download >Resume</a>  
-          <a className='px-8 py-2 border' 
+          {/* <a className='px-8 py-2 border' href='../components/Resume_Jason_Jordan_2023.pdf' download >Resume</a>   */}
+
+          {/* <a className='px-8 py-2 border' 
           href='../components/Resume_Jason_Jordan_2023.pdf' 
           target="_blank"
           rel="noopener noreferrer" 
           download
-          >Resume</a>  
+          >Resume</a>   */}
         
 
         </div> 
