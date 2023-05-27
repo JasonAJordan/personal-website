@@ -4,8 +4,7 @@ import Intro from '../components/Intro'
 function contact() {
   return (
     <div>
-
-       <Intro heading='test' message='Words about job here'/>
+      text this is the contact page
     </div>
   )
 }

@@ -5,7 +5,7 @@ function work() {
   return (
     <div>
 
-      <Intro heading='test' message='JOB LIST HERE'/>
+      This is the work page
       
     </div>
   )

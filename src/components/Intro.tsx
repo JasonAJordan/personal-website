@@ -1,32 +1,34 @@
 import React from 'react'
 
-const Intro = ({heading, message}) => {
+const Intro = ( {message} : any ) => {
   return (
-    <div>
-      {/* <div className='flex istems-center justify-center'>
-        Intro Comp
-      </div> */}
-      <div className= 'flex istems-center justify-center
-                      mb-12 bg-fixed bg-center bg-cover bg-white'>
-        <div className=''/>
-        <div className='p-5 ml-[-10rem] mt-[10rem]'>
-          <h2 className='text-5xl font-bold'>{heading}</h2>
-          <p className='py-5 text-xl'>{message}</p>
-          {/* <a className='px-8 py-2 border' href='../components/Resume_Jason_Jordan_2023.pdf' download >Resume</a>   */}
+    <div className='boder-test width-full flex items-center justify-center'>
+      <div className='min-w-[980px]'>
+        <div className= 'grid grid-cols-3 gap-8 '>
+          {/* Column #1 */}
+          <div className='col-span-2'>
+            <p className=' py-5 text-xl'>{message}</p>
+          </div>
 
-          {/* <a className='px-8 py-2 border' 
-          href='../components/Resume_Jason_Jordan_2023.pdf' 
-          target="_blank"
-          rel="noopener noreferrer" 
-          download
-          >Resume</a>   */}
-        
-
-        </div> 
+          {/* Column #2 */}
+          <div> column 2</div>
+        </div>
       </div>
-    </div>
 
-  )
+
+
+      {/* <div className= 'flex istems-center justify-center mb-12 bg-fixed bg-center bg-cover bg-white'>
+          <div className='boder-test p-5 ml-[-10rem] mt-[10rem] w-[1200px]'>
+            <h2 className='intro-title '>
+                Hi, I'm Jason Jordan,{"\n"}
+                a Software Engineer based in NYC..
+            </h2 >
+            <p className='py-5 text-xl'>{message}</p>
+          </div> xdc x 
+      </div> */}
+
+
+    </div>)
 }
 
 export default Intro

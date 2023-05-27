@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Intro from '../components/Intro'
-
+import NavSpacer from '../components/NavbarSpacer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,12 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      {/* 
-      <main>
-        <h1>Hello Webpage Jason!</h1>
-      </main> */}
+      <NavSpacer/> 
+      <Intro 
 
-      <Intro heading='test' message='Words about job here'/>
+        message='Words about job here'
+      />
       
 
     </>
